@@ -203,34 +203,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Contact form Gmail & Mail App launchers
+  // Contact form Gmail + mailto launcher
   const contactForm = document.getElementById("contactForm");
-  const openMailAppBtn = document.getElementById("openMailAppBtn");
+  const mailtoFallbackBtn = document.getElementById("mailtoFallbackBtn");
 
-  function getFormEmailParts() {
+  function getContactFields() {
     const name = document.getElementById("senderName").value.trim();
     const subject = document.getElementById("senderSubject").value.trim();
     const message = document.getElementById("senderMessage").value.trim();
-    if (!name || !subject || !message) return null;
-    const bodyText = `Hi Harini,\n\n${message}\n\nBest regards,\n${name}`;
-    return { subject, bodyText };
+    return { name, subject, message };
   }
 
   contactForm?.addEventListener("submit", (e) => {
     e.preventDefault();
-    const parts = getFormEmailParts();
-    if (!parts) return;
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=haranishreeg@gmail.com&su=${encodeURIComponent(parts.subject)}&body=${encodeURIComponent(parts.bodyText)}`;
+    const { name, subject, message } = getContactFields();
+    if (!name || !subject || !message) return;
+
+    const bodyText = `Hi Harini,\n\n${message}\n\nBest regards,\n${name}`;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=haranishreeg@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
     window.open(gmailUrl, "_blank", "noopener,noreferrer");
     showToast("Opening Gmail compose...");
   });
 
-  openMailAppBtn?.addEventListener("click", () => {
+  mailtoFallbackBtn?.addEventListener("click", () => {
     if (!contactForm?.reportValidity()) return;
-    const parts = getFormEmailParts();
-    if (!parts) return;
-    window.location.href = `mailto:haranishreeg@gmail.com?subject=${encodeURIComponent(parts.subject)}&body=${encodeURIComponent(parts.bodyText)}`;
-    showToast("Opening your default mail app...");
+    const { name, subject, message } = getContactFields();
+    const bodyText = `Hi Harini,\n\n${message}\n\nBest regards,\n${name}`;
+    window.location.href = `mailto:haranishreeg@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
+    showToast("Opening your email app...");
   });
 
   // Scroll Reveal & Active Nav Link

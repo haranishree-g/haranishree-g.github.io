@@ -168,9 +168,7 @@
               href="https://mail.google.com/mail/?view=cm&fs=1&to=haranishreeg@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="social-chip copy-btn"
-              data-copy="haranishreeg@gmail.com"
-              title="Send email via Gmail (also copies address)"
+              class="social-chip"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -680,7 +678,9 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="contact-value"
-                  >haranishreeg@gmail.com</a>
+                  >
+                    haranishreeg@gmail.com
+                  </a>
                 </div>
                 <button type="button" class="btn btn-ghost btn-sm copy-btn" data-copy="haranishreeg@gmail.com">Copy</button>
               </div>
@@ -723,7 +723,7 @@
 
           <form class="card contact-form reveal" id="contactForm">
             <h3>Compose an Email</h3>
-            <p class="form-hint">Fill this out to compose your message directly in Gmail or your default email app.</p>
+            <p class="form-hint">Fill this out to open Gmail pre-filled with your message.</p>
 
             <div class="form-row">
               <div class="field">
@@ -741,9 +741,9 @@
               <textarea id="senderMessage" name="message" rows="4" placeholder="Write your message for Harini..." required></textarea>
             </div>
 
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Send via Gmail ↗</button>
-              <button type="button" class="btn btn-secondary" id="openMailAppBtn">Open Mail App</button>
+            <div class="project-footer">
+              <button type="submit" class="btn btn-primary">Send via Gmail →</button>
+              <button type="button" class="btn btn-ghost btn-sm" id="mailtoFallbackBtn">Or Email App</button>
             </div>
           </form>
         </div>
