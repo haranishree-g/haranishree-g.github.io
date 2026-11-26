@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harini Shree G — Computer Science Engineer & AI/Web Developer</title>
+  <meta
+    name="description"
+    content="Portfolio of Harini Shree G, Computer Science & Engineering student in Bengaluru specializing in AI/ML, Python, Java, and Full-Stack Web Development."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <div class="bg-ambient" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="Harini Shree G Home">
+        <span class="brand-mark">HS</span>
+        <span class="brand-text">Harini Shree G</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#languages">Languages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="btn btn-ghost btn-sm"
+          id="openResumeBtn"
+          aria-label="Open Resume Preview"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <button
+          type="button"
+          class="icon-btn"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+          title="Toggle Light / Dark Mode"
+        >
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="icon-btn mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Bengaluru, India • Open to Software &amp; AI/ML Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent-gradient">Harini Shree G</span>
+          </h1>
+
+          <p class="hero-subtitle">Computer Science and Engineering</p>
+
+          <p class="hero-description">
+            Enthusiastic CSE undergraduate with strong foundations in <strong>C, Python, Java, HTML &amp; CSS</strong>,
+            combining <strong>AI/ML</strong> intelligence with clean full-stack web engineering to craft
+            efficient, secure, and user-friendly software.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <button type="button" class="btn btn-outline" id="heroResumeBtn">Preview Resume</button>
+            <a
+              href="assets/Harini_Shree_G_Resume.pdf"
+              download="Harini_Shree_G_Resume.pdf"
+              class="btn btn-ghost"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download PDF</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a
+              href="https://github.com/haranishree-g"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-chip"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/harini-shree-g-66a5202a7"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-chip"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <button type="button" class="social-chip copy-btn" data-copy="haranishreeg@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>haranishreeg@gmail.com</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-frame">
+            <div class="portrait-backdrop" aria-hidden="true"></div>
+            <img
+              src="assets/profile.jpg"
+              alt="Portrait of Harini Shree G in a navy blazer"
+              class="portrait-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats Strip -->
+      <div class="container stats-strip reveal">
+        <div class="stat-card">
+          <span class="stat-value">9.0</span>
+          <span class="stat-label">B.Tech CSE CGPA</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">3+</span>
+          <span class="stat-label">AI &amp; Full-Stack Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">79%</span>
+          <span class="stat-label">NPTEL Cloud Computing (Elite)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">94.24%</span>
+          <span class="stat-label">KSEEB Secondary Score</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">01 / Profile</span>
+          <h2 class="section-title">Engineering with Clarity &amp; Purpose</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="card about-narrative reveal">
+            <h3>Career Objective &amp; Mindset</h3>
+            <p>
+              I am an enthusiastic <strong>Computer Science and Engineering</strong> student at
+              <strong>R L Jalappa Institute of Technology, Bengaluru</strong>, maintaining a
+              <strong>9.0 CGPA</strong>. My work sits at the intersection of structured software
+              engineering, intuitive web interfaces, and applied Artificial Intelligence.
+            </p>
+            <p>
+              From building explainable medical imaging diagnostic workflows and NLP-driven resume
+              analyzers in Java to crafting smart Python web platforms with OTP authentication and
+              analytics dashboards, I focus on creating applications that are reliable, secure, and
+              genuinely helpful to end users.
+            </p>
+            <div class="about-pillars">
+              <div class="pillar">
+                <span class="pillar-icon">⚡</span>
+                <div>
+                  <strong>Full-Stack Foundations</strong>
+                  <p>Python (Flask/Django), Java Servlets/JSP, HTML, CSS, JavaScript &amp; SQL.</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">🧠</span>
+                <div>
+                  <strong>Applied AI &amp; NLP</strong>
+                  <p>Explainable medical analysis, fuzzy matching, recommendations &amp; skill-gap parsing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card about-meta reveal">
+            <h3>At a Glance</h3>
+            <ul class="meta-list">
+              <li>
+                <span class="meta-key">Location</span>
+                <span class="meta-val">Bengaluru, Karnataka, IN</span>
+              </li>
+              <li>
+                <span class="meta-key">Degree</span>
+                <span class="meta-val">B.Tech in CSE (CGPA: 9)</span>
+              </li>
+              <li>
+                <span class="meta-key">Focus Areas</span>
+                <span class="meta-val">Software Dev, AI/ML, Web Apps</span>
+              </li>
+              <li>
+                <span class="meta-key">Languages</span>
+                <span class="meta-val">English, Kannada, Telugu</span>
+              </li>
+              <li>
+                <span class="meta-key">Soft Skills</span>
+                <span class="meta-val">Communication, Leadership, Time Management</span>
+              </li>
+            </ul>
+            <div class="meta-actions">
+              <button type="button" class="btn btn-secondary btn-full copy-btn" data-copy="+91 7899014608">
+                Copy Phone: +91 7899014608
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">02 / Technical Toolkit</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-lead">
+            Core programming languages, web technologies, databases, and engineering capabilities applied across academic and project work.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">&lt;/&gt;</span>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="tag-group">
+              <span class="tag tag-primary">C</span>
+              <span class="tag tag-primary">Python</span>
+              <span class="tag tag-primary">Java</span>
+            </div>
+            <p class="skill-note">Strong algorithmic problem-solving in C &amp; Python, plus enterprise/desktop application development in Java.</p>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">🌐</span>
+              <h3>Web &amp; Backend Stack</h3>
+            </div>
+            <div class="tag-group">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Flask / Django</span>
+              <span class="tag">Servlets &amp; JSP</span>
+              <span class="tag">JDBC</span>
+            </div>
+            <p class="skill-note">Responsive frontends paired with Python and Java web backends, authentication flows, and dynamic dashboards.</p>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">🤖</span>
+              <h3>AI / ML &amp; Databases</h3>
+            </div>
+            <div class="tag-group">
+              <span class="tag">AI / ML Concepts</span>
+              <span class="tag">Medical Image Processing</span>
+              <span class="tag">NLP / String Parsing</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">SQLite</span>
+            </div>
+            <p class="skill-note">Practical experience integrating explainable ML insights, NLP extraction, and relational persistence.</p>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">☁️</span>
+              <h3>Cloud Computing</h3>
+            </div>
+            <div class="tag-group">
+              <span class="tag">Cloud Computing Fundamentals</span>
+            </div>
+            <p class="skill-note">Basic knowledge of cloud computing fundamentals, backed by NPTEL Elite Cloud Computing certification.</p>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">🧩</span>
+              <h3>Problem-Solving</h3>
+            </div>
+            <div class="tag-group">
+              <span class="tag">Analytical Thinking</span>
+              <span class="tag">Logical Problem-Solving</span>
+            </div>
+            <p class="skill-note">Strong analytical thinking and logical problem-solving applied across algorithms, debugging, and system design.</p>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">🤝</span>
+              <h3>Leadership &amp; Collaboration</h3>
+            </div>
+            <div class="tag-group">
+              <span class="tag">Communication</span>
+              <span class="tag">Leadership</span>
+              <span class="tag">Time Management</span>
+            </div>
+            <p class="skill-note">Committed to collaborative team workflows, clear documentation, and continuous technical growth.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <span class="section-eyebrow">03 / Project Work</span>
+            <h2 class="section-title">Featured Engineering Projects</h2>
+          </div>
+
+          <div class="filter-bar" role="tablist" aria-label="Filter projects by category">
+            <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All (3)</button>
+            <button type="button" class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI / ML</button>
+            <button type="button" class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Apps</button>
+            <button type="button" class="filter-btn" data-filter="java" role="tab" aria-selected="false">Java &amp; SQL</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="card project-card reveal" data-category="ai java">
+            <div class="project-banner">
+              <img
+                src="assets/project-medical.jpg"
+                alt="AI medical imaging and clinical analysis illustration"
+                class="banner-img"
+              />
+              <div class="banner-badge">AI / Healthcare</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="mono-label">PROJECT 01</span>
+                <span class="project-domain">Medical AI &amp; Decision Support</span>
+              </div>
+              <h3>Clinical Context Integration Using Medical Imaging</h3>
+              <p>
+                AI-powered diagnostic assistant integrating medical images with patient clinical context.
+                Features explainable findings, specialist recommendations, structured reports, voice-based
+                explanations, and local SQLite/MySQL record management.
+              </p>
+              <div class="tag-group">
+                <span class="tag">Java</span>
+                <span class="tag">AI / ML</span>
+                <span class="tag">Medical Image Processing</span>
+                <span class="tag">SQLite / MySQL</span>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm project-detail-btn" data-project="medical">
+                  View System Details →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card reveal" data-category="ai web">
+            <div class="project-banner banner-contain">
+              <img
+                src="assets/project-library.jpg"
+                alt="Online Library Management System illustration"
+                class="banner-img"
+              />
+              <div class="banner-badge">Python Full-Stack</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="mono-label">PROJECT 02</span>
+                <span class="project-domain">Intelligent Web Application</span>
+              </div>
+              <h3>Online Library Management System</h3>
+              <p>
+                Smart library platform featuring OTP-based login, fuzzy-matching smart search, real-time
+                book tracking, AI recommendations, fine calculation, data visualization dashboards,
+                UPI payments, and database + Excel record management.
+              </p>
+              <div class="tag-group">
+                <span class="tag">HTML / CSS</span>
+                <span class="tag">Python (Flask/Django)</span>
+                <span class="tag">SQLite / MySQL</span>
+                <span class="tag">Fuzzy Search</span>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm project-detail-btn" data-project="library">
+                  View System Details →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card reveal" data-category="ai web java">
+            <div class="project-banner">
+              <img
+                src="assets/project-analyzer.jpg"
+                alt="AI-Based Resume and Skill Gap Analyzer illustration"
+                class="banner-img"
+              />
+              <div class="banner-badge">NLP &amp; Java Web</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="mono-label">PROJECT 03</span>
+                <span class="project-domain">NLP &amp; Career Analytics</span>
+              </div>
+              <h3>AI-Based Resume &amp; Skill Gap Analyzer</h3>
+              <p>
+                NLP-powered application that extracts candidate skills, evaluates job compatibility,
+                pinpoints skill gaps, and generates personalized learning roadmaps with user
+                authentication, dynamic candidate dashboards, and JDBC/MySQL connectivity.
+              </p>
+              <div class="tag-group">
+                <span class="tag">Java / Servlets / JSP</span>
+                <span class="tag">HTML / CSS</span>
+                <span class="tag">JDBC / MySQL</span>
+                <span class="tag">NLP / String Parsing</span>
+              </div>
+              <div class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm project-detail-btn" data-project="analyzer">
+                  View System Details →
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">04 / Academic Background</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="card timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>R L Jalappa Institute of Technology</h3>
+                  <p class="timeline-place">Bengaluru, Karnataka</p>
+                </div>
+                <span class="score-pill score-pill-primary">CGPA: 9.0</span>
+              </div>
+              <p class="timeline-degree">B.Tech in Computer Science and Engineering</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="card timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Royal Composite PU College</h3>
+                  <p class="timeline-place">Chintamani, Karnataka</p>
+                </div>
+                <span class="score-pill">89.16%</span>
+              </div>
+              <p class="timeline-degree">Pre-University Education — Science (PCMB)</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="card timeline-card">
+              <div class="timeline-top">
+                <div>
+                  <h3>Royal English Medium School</h3>
+                  <p class="timeline-place">Chintamani, Karnataka</p>
+                </div>
+                <span class="score-pill">94.24%</span>
+              </div>
+              <p class="timeline-degree">Karnataka State Board (KSEEB)</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">05 / Credentials</span>
+          <h2 class="section-title">NPTEL Elite Certifications</h2>
+        </div>
+
+        <div class="cert-grid">
+          <article class="card cert-card reveal">
+            <div class="cert-badge">ELITE • IIT KHARAGPUR</div>
+            <h3>Cloud Computing</h3>
+            <p class="cert-meta">NPTEL Online Certification • Jul–Oct 2026</p>
+            <div class="cert-progress-wrap">
+              <div class="cert-progress-head">
+                <span>Consolidated Score</span>
+                <span class="mono-label">79%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true">
+                <div class="progress-fill" style="width: 79%"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card cert-card reveal">
+            <div class="cert-badge">ELITE • IIT MADRAS</div>
+            <h3>Introduction to Machine Learning</h3>
+            <p class="cert-meta">NPTEL Online Certification • Jan–Apr 2026</p>
+            <div class="cert-progress-wrap">
+              <div class="cert-progress-head">
+                <span>Consolidated Score</span>
+                <span class="mono-label">64%</span>
+              </div>
+              <div class="progress-track" aria-hidden="true">
+                <div class="progress-fill" style="width: 64%"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Languages Known Section -->
+    <section class="section section-alt" id="languages">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">06 / Languages</span>
+          <h2 class="section-title">Languages Known</h2>
+        </div>
+
+        <div class="languages-grid">
+          <article class="card language-card reveal">
+            <span class="lang-code">EN</span>
+            <h3>English</h3>
+          </article>
+
+          <article class="card language-card reveal">
+            <span class="lang-code">KN</span>
+            <h3>Kannada</h3>
+          </article>
+
+          <article class="card language-card reveal">
+            <span class="lang-code">TE</span>
+            <h3>Telugu</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">07 / Get in Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-lead">
+            Interested in software engineering internships, entry-level developer roles, or collaborative AI &amp; web projects? Reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card contact-info-card reveal">
+            <h3>Direct Contact</h3>
+            <div class="contact-list">
+              <div class="contact-item">
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:haranishreeg@gmail.com" class="contact-value">haranishreeg@gmail.com</a>
+                </div>
+                <button type="button" class="btn btn-ghost btn-sm copy-btn" data-copy="haranishreeg@gmail.com">Copy</button>
+              </div>
+
+              <div class="contact-item">
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+917899014608" class="contact-value">+91 7899014608</a>
+                </div>
+                <button type="button" class="btn btn-ghost btn-sm copy-btn" data-copy="+91 7899014608">Copy</button>
+              </div>
+
+              <div class="contact-item">
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Bengaluru, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-links">
+              <a
+                href="https://www.linkedin.com/in/harini-shree-g-66a5202a7"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm"
+              >
+                LinkedIn Profile ↗
+              </a>
+              <a
+                href="https://github.com/haranishree-g"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary btn-sm"
+              >
+                GitHub Profile ↗
+              </a>
+            </div>
+          </div>
+
+          <form class="card contact-form reveal" id="contactForm">
+            <h3>Compose an Email</h3>
+            <p class="form-hint">Fill this out to launch your default email app pre-filled with your message.</p>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="senderName">Your Name</label>
+                <input type="text" id="senderName" name="name" placeholder="e.g. Priya Sharma" required />
+              </div>
+              <div class="field">
+                <label for="senderSubject">Subject</label>
+                <input type="text" id="senderSubject" name="subject" placeholder="e.g. Software Developer Opportunity" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="senderMessage">Message</label>
+              <textarea id="senderMessage" name="message" rows="4" placeholder="Write your message for Harini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Open in Email Client →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="yearNow"></span> Harini Shree G • Bengaluru, IN</p>
+      <div class="footer-links">
+        <a href="https://github.com/haranishree-g" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/harini-shree-g-66a5202a7" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:haranishreeg@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="projectModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog card">
+      <button type="button" class="modal-close" id="closeProjectModal" aria-label="Close project details">✕</button>
+      <span class="section-eyebrow" id="modalCategory">Project Details</span>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-summary" id="modalSummary"></p>
+      <div class="modal-section">
+        <h4>Key Implemented Features</h4>
+        <ul class="modal-list" id="modalFeatures"></ul>
+      </div>
+      <div class="modal-section">
+        <h4>Tools &amp; Technologies</h4>
+        <div class="tag-group" id="modalTools"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Preview Modal -->
+  <div class="modal-backdrop" id="resumeModal" hidden role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <div class="modal-dialog modal-dialog-lg card">
+      <div class="resume-modal-header">
+        <div>
+          <span class="section-eyebrow">Curriculum Vitae</span>
+          <h3 id="resumeModalTitle">Harini Shree G — Resume</h3>
+        </div>
+        <div class="resume-modal-actions">
+          <button type="button" class="btn btn-secondary btn-sm" id="toggleResumeMode">View Word Format</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="printResumeBtn">Print / Save PDF</button>
+          <a
+            href="assets/Harini_Shree_G_Resume.pdf"
+            download="Harini_Shree_G_Resume.pdf"
+            class="btn btn-primary btn-sm"
+          >
+            Download PDF
+          </a>
+          <button type="button" class="modal-close-inline" id="closeResumeModal" aria-label="Close resume modal">✕</button>
+        </div>
+      </div>
+
+      <div class="resume-sheet" id="structuredResumeView">
+        <div class="resume-sheet-top">
+          <h2>HARINI SHREE G</h2>
+          <p>
+            Bengaluru, IN | +91 7899014608 | haranishreeg@gmail.com<br />
+            linkedin.com/in/harini-shree-g-66a5202a7 | github.com/haranishree-g
+          </p>
+        </div>
+        <div class="resume-block">
+          <h4>Objective</h4>
+          <p>
+            Enthusiastic Computer Science and Engineering student with strong foundational skills in C, Python, HTML,
+            and CSS, along with knowledge of AI/ML and web application development. Eager to grow as a Software
+            Developer by applying programming and problem-solving skills while learning advanced technologies.
+            Committed to building efficient, secure, and user-friendly applications through continuous learning and collaboration.
+          </p>
+        </div>
+        <div class="resume-block">
+          <h4>Education</h4>
+          <ul>
+            <li><strong>R L Jalappa Institute of Technology, Bengaluru</strong> — B.Tech in Computer Science and Engineering (<strong>CGPA: 9</strong>)</li>
+            <li><strong>Royal Composite PU College, Chintamani</strong> — Science in PCMB (<strong>89.16%</strong>)</li>
+            <li><strong>Royal English Medium School, Chintamani</strong> — Karnataka State Board (KSEEB) (<strong>94.24%</strong>)</li>
+          </ul>
+        </div>
+        <div class="resume-block">
+          <h4>Skills</h4>
+          <ul>
+            <li><strong>Programming Languages:</strong> C, Python, Java</li>
+            <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Cloud Computing:</strong> Basic knowledge of cloud computing fundamentals</li>
+            <li><strong>Problem-Solving:</strong> Analytical thinking and logical problem-solving</li>
+            <li><strong>Soft Skills:</strong> Communication, Leadership, Time management</li>
+          </ul>
+        </div>
+        <div class="resume-block">
+          <h4>Project Work</h4>
+          <ul>
+            <li><strong>Clinical Context Integration Using Medical Imaging:</strong> AI-powered system integrating medical images and patient clinical info with explainable findings, specialist recommendations, structured reports, voice explanations, and local SQLite/MySQL storage. (Java, AI/ML, Medical Image Processing, SQLite/MySQL)</li>
+            <li><strong>Online Library Management System:</strong> Intelligent web app with OTP login, fuzzy smart search, real-time tracking, AI recommendations, fine calculation, dashboards, UPI payments, and database/Excel records. (HTML, CSS, Python Flask/Django, SQLite/MySQL)</li>
+            <li><strong>AI-Based Resume &amp; Skill Gap Analyzer:</strong> NLP-powered application extracting skills, evaluating job compatibility, identifying skill gaps, and generating personalized learning roadmaps. (Java, Servlets, JSP, HTML, CSS, JDBC, MySQL, NLP/String Parsing)</li>
+          </ul>
+        </div>
+        <div class="resume-block">
+          <h4>Certificates</h4>
+          <ul>
+            <li>Introduction to Machine Learning (Elite) — NPTEL, IIT Madras | Jan–Apr 2026 | Score: 64%</li>
+            <li>Cloud Computing (Elite) — NPTEL, IIT Kharagpur | Jul–Oct 2026 | Score: 79%</li>
+          </ul>
+        </div>
+        <div class="resume-block">
+          <h4>Languages Known</h4>
+          <ul>
+            <li>English, Kannada, Telugu</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-sheet resume-word-view" id="wordResumeView" hidden>
+        <div class="word-header">
+          <h2>HARINI SHREE G</h2>
+          <p>Bengaluru, IN | Ph: +91 7899014608 | haranishreeg@gmail.com</p>
+          <p>
+            <a href="https://www.linkedin.com/in/harini-shree-g-66a5202a7" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/harini-shree-g-66a5202a7</a>
+            &nbsp;
+            <a href="https://github.com/haranishree-g" target="_blank" rel="noopener noreferrer">https://github.com/haranishree-g</a>
+          </p>
+        </div>
+
+        <div class="word-section">
+          <h4>Objective</h4>
+          <p>
+            Enthusiastic Computer Science and Engineering student with strong foundational skills in C, Python, HTML,
+            and CSS, along with knowledge of AI/ML and web application development. Eager to grow as a Software
+            Developer by applying programming and problem-solving skills while learning advanced technologies.
+            Committed to building efficient, secure, and user-friendly applications through continuous learning and collaboration.
+          </p>
+        </div>
+
+        <div class="word-section">
+          <h4>Education</h4>
+          <div class="word-edu-item">
+            <div>
+              <strong>R L JALAPPA INSTITUTE OF TECHNOLOGY, Bengaluru</strong><br />
+              <span>B. Tech in Computer Science and Engineering</span>
+            </div>
+            <strong>CGPA: 9</strong>
+          </div>
+          <div class="word-edu-item">
+            <div>
+              <strong>ROYAL COMPOSITE PU COLLEGE, Chintamani</strong><br />
+              <span>Science in PCMB</span>
+            </div>
+            <strong>Percentage: 89.16%</strong>
+          </div>
+          <div class="word-edu-item">
+            <div>
+              <strong>ROYAL ENGLISH MEDIUM SCHOOL, Chintamani</strong><br />
+              <span>Karnataka State Board (KSEEB)</span>
+            </div>
+            <strong>Percentage: 94.24%</strong>
+          </div>
+        </div>
+
+        <div class="word-section">
+          <h4>Skills</h4>
+          <ul>
+            <li><strong>Programming Languages:</strong> C, Python</li>
+            <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Cloud Computing:</strong> Basic knowledge of cloud computing fundamentals</li>
+            <li><strong>Problem-Solving:</strong> Analytical thinking and logical problem-solving</li>
+            <li><strong>Soft Skills:</strong> Communication, Leadership, Time management</li>
+          </ul>
+        </div>
+
+        <div class="word-section">
+          <h4>Project Work</h4>
+          <ul>
+            <li>
+              <strong>Clinical Context Integration Using Medical Imaging:</strong> Developed an AI-powered system integrating
+              medical images and patient clinical information for intelligent analysis. Implemented explainable findings,
+              specialist recommendations, structured report generation, voice-based explanations, and local data storage
+              to manage patient records and reports.<br />
+              <strong>Tools Used:</strong> Java, AI/ML, Medical Image Processing, SQLite/MySQL.
+            </li>
+            <li>
+              <strong>Online Library Management System:</strong> Developed an intelligent web application with OTP-based login,
+              smart search (fuzzy matching), and real-time book tracking. Implemented features like AI recommendations,
+              user management, and flexible issue/return with fine calculation. Integrated data visualization dashboards
+              and UPI-based payments with database &amp; Excel record management.<br />
+              <strong>Tools Used:</strong> HTML, CSS, Python (Flask/Django), SQLite/MySQL.
+            </li>
+            <li>
+              <strong>AI-Based Resume &amp; Skill Gap Analyzer:</strong> Developed an AI-powered application using NLP to
+              extract skills, evaluate job compatibility, identify skill gaps, and generate personalized learning roadmaps.
+              Implemented user authentication, dynamic candidate dashboards, and efficient database connectivity.<br />
+              <strong>Tools Used:</strong> Java, Servlets, JSP, HTML, CSS, JDBC, MySQL, NLP/String Parsing.
+            </li>
+          </ul>
+        </div>
+
+        <div class="word-section">
+          <h4>Certificates</h4>
+          <ul>
+            <li>Introduction to Machine Learning (Elite) – NPTEL, IIT Madras | Jan–Apr 2026 | <strong>Score: 64%</strong></li>
+            <li>Cloud Computing (Elite) – NPTEL, IIT Kharagpur | Jul–Oct 2026 | <strong>Score: 79%</strong></li>
+          </ul>
+        </div>
+
+        <div class="word-section">
+          <h4>LANGUAGES</h4>
+          <ul>
+            <li>English, Kannada, Telugu</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
