@@ -10,7 +10,8 @@ const PROJECT_DETAILS = {
       "Produces structured diagnostic reports and voice-based explanations for improved accessibility.",
       "Persists patient records and generated reports locally using SQLite / MySQL databases."
     ],
-    tools: ["Java", "AI / ML", "Medical Image Processing", "SQLite / MySQL"]
+    tools: ["Java", "AI / ML", "Medical Image Processing", "SQLite / MySQL"],
+    repo: "https://github.com/haranishree-g/Medical_Scan"
   },
   library: {
     category: "Intelligent Web App • Python",
@@ -23,7 +24,8 @@ const PROJECT_DETAILS = {
       "AI-assisted book recommendations and flexible issue/return workflows with automatic fine calculation.",
       "Data visualization dashboards, UPI-based payment integration, and synced database + Excel record management."
     ],
-    tools: ["HTML", "CSS", "Python (Flask / Django)", "SQLite / MySQL", "Fuzzy Search", "Excel Integration"]
+    tools: ["HTML", "CSS", "Python (Flask / Django)", "SQLite / MySQL", "Fuzzy Search", "Excel Integration"],
+    repo: "https://github.com/haranishree-g/Online-Library-Management-System-"
   },
   analyzer: {
     category: "NLP & Career Intelligence • Java Web",
@@ -36,7 +38,8 @@ const PROJECT_DETAILS = {
       "Generates personalized learning roadmaps tailored to target job descriptions.",
       "Includes user authentication, dynamic candidate dashboards, and efficient JDBC / MySQL database connectivity."
     ],
-    tools: ["Java", "Servlets", "JSP", "HTML", "CSS", "JDBC", "MySQL", "NLP / String Parsing"]
+    tools: ["Java", "Servlets", "JSP", "HTML", "CSS", "JDBC", "MySQL", "NLP / String Parsing"],
+    repo: "https://github.com/haranishree-g/AI-Based-Resume-Skill-Gap-Analyzer-project"
   }
 };
 
@@ -131,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalSummary = document.getElementById("modalSummary");
   const modalFeatures = document.getElementById("modalFeatures");
   const modalTools = document.getElementById("modalTools");
+  const modalRepoLink = document.getElementById("modalRepoLink");
   const closeProjectModal = document.getElementById("closeProjectModal");
 
   function openProjectModal(key) {
@@ -141,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modalSummary.textContent = data.summary;
     modalFeatures.innerHTML = data.features.map((item) => `<li>${item}</li>`).join("");
     modalTools.innerHTML = data.tools.map((tool) => `<span class="tag">${tool}</span>`).join("");
+    if (modalRepoLink) modalRepoLink.href = data.repo || "#";
     projectModal.hidden = false;
   }
 
