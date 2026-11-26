@@ -14,7 +14,7 @@
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
   <div class="bg-ambient" aria-hidden="true"></div>
@@ -164,13 +164,20 @@
               <span>LinkedIn</span>
             </a>
 
-            <button type="button" class="social-chip copy-btn" data-copy="haranishreeg@gmail.com">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=haranishreeg@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-chip copy-btn"
+              data-copy="haranishreeg@gmail.com"
+              title="Send email via Gmail (also copies address)"
+            >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                 <polyline points="22,6 12,13 2,6"></polyline>
               </svg>
               <span>haranishreeg@gmail.com</span>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -668,7 +675,12 @@
               <div class="contact-item">
                 <div>
                   <span class="contact-label">Email</span>
-                  <a href="mailto:haranishreeg@gmail.com" class="contact-value">haranishreeg@gmail.com</a>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=haranishreeg@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-value"
+                  >haranishreeg@gmail.com</a>
                 </div>
                 <button type="button" class="btn btn-ghost btn-sm copy-btn" data-copy="haranishreeg@gmail.com">Copy</button>
               </div>
@@ -711,7 +723,7 @@
 
           <form class="card contact-form reveal" id="contactForm">
             <h3>Compose an Email</h3>
-            <p class="form-hint">Fill this out to launch your default email app pre-filled with your message.</p>
+            <p class="form-hint">Fill this out to compose your message directly in Gmail or your default email app.</p>
 
             <div class="form-row">
               <div class="field">
@@ -729,7 +741,10 @@
               <textarea id="senderMessage" name="message" rows="4" placeholder="Write your message for Harini..." required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary">Open in Email Client →</button>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send via Gmail ↗</button>
+              <button type="button" class="btn btn-secondary" id="openMailAppBtn">Open Mail App</button>
+            </div>
           </form>
         </div>
       </div>
@@ -742,7 +757,7 @@
       <div class="footer-links">
         <a href="https://github.com/haranishree-g" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/harini-shree-g-66a5202a7" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:haranishreeg@gmail.com">Email</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=haranishreeg@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
       </div>
     </div>
   </footer>
@@ -960,6 +975,6 @@
   <!-- Toast notification -->
   <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>

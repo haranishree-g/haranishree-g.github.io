@@ -203,18 +203,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Contact form mailto launcher
+  // Contact form Gmail & Mail App launchers
   const contactForm = document.getElementById("contactForm");
-  contactForm?.addEventListener("submit", (e) => {
-    e.preventDefault();
+  const openMailAppBtn = document.getElementById("openMailAppBtn");
+
+  function getFormEmailParts() {
     const name = document.getElementById("senderName").value.trim();
     const subject = document.getElementById("senderSubject").value.trim();
     const message = document.getElementById("senderMessage").value.trim();
-    if (!name || !subject || !message) return;
+    if (!name || !subject || !message) return null;
+    const bodyText = `Hi Harini,\n\n${message}\n\nBest regards,\n${name}`;
+    return { subject, bodyText };
+  }
 
-    const body = `Hi Harini,%0D%0A%0D%0A${encodeURIComponent(message)}%0D%0A%0D%0ABest regards,%0D%0A${encodeURIComponent(name)}`;
-    window.location.href = `mailto:haranishreeg@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-    showToast("Opening your email client...");
+  contactForm?.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const parts = getFormEmailParts();
+    if (!parts) return;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=haranishreeg@gmail.com&su=${encodeURIComponent(parts.subject)}&body=${encodeURIComponent(parts.bodyText)}`;
+    window.open(gmailUrl, "_blank", "noopener,noreferrer");
+    showToast("Opening Gmail compose...");
+  });
+
+  openMailAppBtn?.addEventListener("click", () => {
+    if (!contactForm?.reportValidity()) return;
+    const parts = getFormEmailParts();
+    if (!parts) return;
+    window.location.href = `mailto:haranishreeg@gmail.com?subject=${encodeURIComponent(parts.subject)}&body=${encodeURIComponent(parts.bodyText)}`;
+    showToast("Opening your default mail app...");
   });
 
   // Scroll Reveal & Active Nav Link
